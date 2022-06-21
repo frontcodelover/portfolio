@@ -1,18 +1,34 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
 import Ndr from "../ndr-nb.jpg"
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 type Props = {};
 
 const SectionAbout = (props: Props) => {
+  const imgRef = useRef(null)
+
+
+  useEffect(() => {
+    const el = imgRef.current;
+    gsap.fromTo(el, { opacity: 0, translateX: "50px" }, {
+      opacity: 1, duration: 4, ease: "power4.inOut", translateX: "0", scrollTrigger: {
+      trigger: el
+      }
+    })
+    
+  }, [])
+
   return (
-    <section className="grid grid-cols-3 pb-9 gap-10">
+    <section className="grid grid-cols-3 pb-9 gap-10 " ref={imgRef} id="about">
       <div className="col-span-1 h-auto">
         <img src={Ndr} alt="ndr" className="w-full object-cover h-2/3 object-top rounded-xl" />
       </div>
         <div className="col-span-2 content-center pt-7">
       <p className="font-[poppins] dark:text-gray-400 leading-snug text-4xl">
         <span role="img" aria-label="vulcan" >👋 </span>
-        <span className="bg-gradient-to-r from-yellow-ndr to-white bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-yellow-ndr to-white bg-clip-text text-transparent" >
         Hello ! Je m'appelle Nicolas et je suis développeur web Front-End passionné !
         </span>
       </p>

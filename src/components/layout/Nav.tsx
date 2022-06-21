@@ -3,14 +3,14 @@ import Button from './Button';
 
 const Nav = () => {
     let Links =[
-      {name:"A propos",link:"/"},
+      {name:"A propos",link:"/#about"},
       {name:"Compétences",link:"/"},
       {name:"Expériences",link:"/"},
       {name:"Projets",link:"/"},
     ];
     let [open,setOpen]=useState(false);
   return (
-    <div className=' w-full fixed top-0 left-0'>
+    <div className=' w-full top-0 left-0'>
       <div className='md:flex items-center justify-between py-4 md:px-10 px-7'>
       <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-white'>
