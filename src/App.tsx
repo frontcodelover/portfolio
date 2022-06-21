@@ -4,6 +4,7 @@ import "./App.css";
 import SectionAbout from "./components/SectionAbout"
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import SoftSkills from "./components/SoftSkills";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       </div>
     </div>
     <SectionAbout />
-    <Skills />
+      <Skills />
+      <SoftSkills />
     <Contact />
     </>
   );
