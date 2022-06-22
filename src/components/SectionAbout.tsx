@@ -13,8 +13,12 @@ const SectionAbout = (props: Props) => {
   useEffect(() => {
     const el = imgRef.current;
     gsap.fromTo(el, { opacity: 0, translateX: "50px" }, {
-      opacity: 1, duration: 4, ease: "power4.inOut", translateX: "0", scrollTrigger: {
-      trigger: el
+      opacity: 1, duration: 4, ease: "power4.inOut",  translateX: "0", scrollTrigger: {
+        trigger: el,
+        start: 'top 25%',
+  end: 'bottom',
+  scrub: 1,
+        pin:true,
       }
     })
     
@@ -26,7 +30,7 @@ const SectionAbout = (props: Props) => {
         <img src={Ndr} alt="ndr" className="w-full object-cover h-2/3 object-top rounded-xl" />
       </div>
         <div className="col-span-2 content-center pt-7">
-      <p className="font-[poppins] dark:text-gray-400 leading-snug text-4xl">
+      <p className="font-[poppins] dark:text-gray-400 leading-snug text-4xl overflow-y-hidden">
         <span role="img" aria-label="vulcan" >👋 </span>
           <span className="bg-gradient-to-r from-yellow-ndr to-white bg-clip-text text-transparent" >
         Hello ! Je m'appelle Nicolas et je suis développeur web Front-End passionné !

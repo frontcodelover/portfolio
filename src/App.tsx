@@ -17,6 +17,7 @@ function App() {
   const imgButtonRef = useRef(null)
   const txtTest = useRef(null)
   const txtTestTwo = useRef(null)
+  const textHero = useRef(null)
 
   useEffect(() => {
     const el = imgRef.current;
@@ -47,10 +48,10 @@ function App() {
       scrollTrigger: {
         trigger: elText,
         scrub: 0.6,
-        start: "top 30%",
-        end: "bottom -20px",
+        start: "center center",
+        end: "top 50%",
       },
-      x:2500
+      x:"20%"
     }
     )
 
@@ -60,13 +61,18 @@ function App() {
         trigger: elText2,
         scrub: 0.6,
         start: "top 31%",
-        end: "bottom -20px",
+        end: "bottom 50%",
       },
-      x:2500
+      x:"5px"
     }
     )
+
     
+    
+    
+
   }, [])
+  
 
 
 
@@ -78,8 +84,8 @@ function App() {
     <div className="h-screen  grid grid-cols-2 content-center text-white relative z-0 overflow-y-hidden" >
   <div className="col-span-1" ref={imgRef}>
       <p className="text-2xl tracking-wide">Nicolas de RAEMY</p>
-      <h1 className="font-extrabold text-9xl w-auto">
-        <span className="bg-gradient-to-r from-blue-ndr via-red-ndr to-yellow-ndr bg-clip-text text-transparent">Front-End</span> <br /> Développeur
+      <h1 className="font-extrabold text-8xl w-auto overflow-y-hidden">
+        <span className="bg-gradient-to-r from-blue-ndr via-red-ndr to-yellow-ndr bg-clip-text text-transparent overflow-y-hidden">Front-End</span> <br /> Développeur
       </h1>
       <h2 className="text-4xl py-6 tracking-wide"><span className="underline underline-offset-8 decoration-blue-ndr">Passionné</span> & <span className="underline underline-offset-8 decoration-red-ndr">Curieux</span></h2>
       </div>
@@ -107,12 +113,23 @@ function App() {
         </button>
         </a>
         </div>
-    </div>
-<h2 className="text-[9rem] text-white w-full font-extrabold uppercase" ref={txtTest}>Qui suis-je ?</h2>
-    <SectionAbout />
-    <h2 className="text-[9rem] text-white w-full font-extrabold uppercase" ref={txtTestTwo}>SOFT&HARD SKILLS</h2>
+      </div>
+      <div id="pageWrap">
+  <section id="heros">
+
+
+      <h2 id="textWrap" className="text-[9rem] text-white w-full font-extrabold uppercase pin" ref={txtTest}>Qui suis-je ?</h2>
+
+        </section>
+        </div>
+            <SectionAbout />
+     
+      <div className="w-auto relative text-center">
+    <h2 className="text-[9rem] text-white font-extrabold uppercase inline-block" ref={txtTestTwo}>SOFT&HARD SKILLS</h2>
+      </div>
       <Skills />
       <SoftSkills />
+
     <Contact />
     </>
   );

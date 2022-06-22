@@ -27,14 +27,7 @@ function SoftSkills() {
   }, [])
   return (
     <section className="container max-w-screen-xl mx-auto text-center py-20">
-    <h2 className="text-5xl font-semibold w-auto inline-block pb-9">
-      <span role="img" aria-label="rocket" className="pr-1">
-      🚀
-      </span>
-      <span className="bg-gradient-to-r from-red-ndr to-blue-ndr bg-clip-text text-transparent">
-        Soft Skills
-      </span>
-      </h2>
+    
       <div className="text-white text-2xl grid grid-cols-2 py-9">
         <div className="col-span-1" ref={imgRefLeft}>
           <span className="bg-red-ndr py-2 px-6 inline-block mb-3 rounded-3xl">Curieux</span> <br />

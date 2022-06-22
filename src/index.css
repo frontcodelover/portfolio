@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 * {
-  cursor: none
+  cursor: none;
+  overflow-x: hidden;
+  overflow-y: hiddent;
 }
 body {
   margin: 0;
