@@ -15,11 +15,15 @@ function App() {
   const imgRef = useRef(null)
   const imgComputRef = useRef(null)
   const imgButtonRef = useRef(null)
+  const txtTest = useRef(null)
+  const txtTestTwo = useRef(null)
 
   useEffect(() => {
     const el = imgRef.current;
-    gsap.fromTo(el, { opacity: 0, translateY: "-50px"  }, {
-      opacity: 1, duration: 2, ease: "power4.inOut", translateY: "0", scrollTrigger: {
+    gsap.fromTo(el, { opacity: 0, yPercent:-25, stagger: 0.1 }, {
+      opacity: 1, duration: 2, ease: "power4.inOut", translateY: "0",
+      yPercent: 0,
+      scrollTrigger: {
       trigger: el
       }
     })
@@ -37,6 +41,30 @@ function App() {
         trigger: elButton
         }
     })
+
+    const elText = txtTest.current;
+    gsap.fromTo(elText, {x:-2000, opacity: 1, ease: "slowMo"}, {
+      scrollTrigger: {
+        trigger: elText,
+        scrub: 0.6,
+        start: "top 30%",
+        end: "bottom -20px",
+      },
+      x:2500
+    }
+    )
+
+    const elText2 = txtTestTwo.current;
+    gsap.fromTo(elText2, {x:-2000, opacity: 1, ease: "slowMo"}, {
+      scrollTrigger: {
+        trigger: elText2,
+        scrub: 0.6,
+        start: "top 31%",
+        end: "bottom -20px",
+      },
+      x:2500
+    }
+    )
     
   }, [])
 
@@ -47,7 +75,7 @@ function App() {
      
       <DotRing />
 
-    <div className="h-screen -mt-[72px] grid grid-cols-2 content-center text-white relative" >
+    <div className="h-screen  grid grid-cols-2 content-center text-white relative z-0 overflow-y-hidden" >
   <div className="col-span-1" ref={imgRef}>
       <p className="text-2xl tracking-wide">Nicolas de RAEMY</p>
       <h1 className="font-extrabold text-9xl w-auto">
@@ -60,21 +88,29 @@ function App() {
         </div>
 
         <div className="grid grid-cols-3 col-span-2 gap-6 container w-1/2 mx-auto" ref={imgButtonRef}>
-        <button className="text-white text-xl bg-white text-black-ndr w-48 h-12 rounded-full hover:bg-red-ndr hover:text-white duration-500" >
+          <a href="https://twitter.com/frontcodelover" target="_blanck" rel="noreferrer">
+        <button className="text-xl bg-white text-black-ndr w-48 h-12 rounded-full hover:bg-red-ndr hover:text-white duration-500" >
           <i className="devicon-twitter-original mr-2"></i>
           Twitter
         </button>
-        <button className="text-white text-xl bg-white text-black-ndr w-48 rounded-full hover:bg-red-ndr hover:text-white duration-500">
+        </a>
+        <a href="https://www.linkedin.com/in/nicolas-de-raemy-957b62231/" target="_blanck" rel="noreferrer">
+        <button className="text-xl bg-white text-black-ndr w-48 h-12 rounded-full hover:bg-red-ndr hover:text-white duration-500">
           <i className="devicon-linkedin-plain mr-2"></i>
           Linkedin
         </button>
-        <button className="text-white text-xl bg-white text-black-ndr w-48 rounded-full hover:bg-red-ndr hover:text-white duration-500">
+        </a>
+        <a href="https://github.com/frontcodelover" target="_blanck" rel="noreferrer">
+        <button className=" text-xl bg-white text-black-ndr w-48 h-12 rounded-full hover:bg-red-ndr hover:text-white duration-500">
           <i className="devicon-github-original mr-2"></i>
           Github
         </button>
+        </a>
         </div>
     </div>
+<h2 className="text-[9rem] text-white w-full font-extrabold uppercase" ref={txtTest}>Qui suis-je ?</h2>
     <SectionAbout />
+    <h2 className="text-[9rem] text-white w-full font-extrabold uppercase" ref={txtTestTwo}>SOFT&HARD SKILLS</h2>
       <Skills />
       <SoftSkills />
     <Contact />
