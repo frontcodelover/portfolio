@@ -8,6 +8,7 @@ import SoftSkills from "./components/SoftSkills";
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import DotRing from "./components/DotRing/DotRing";
+import Projects from "./Projects";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -17,7 +18,7 @@ function App() {
   const imgButtonRef = useRef(null)
   const txtTest = useRef(null)
   const txtTestTwo = useRef(null)
-  const textHero = useRef(null)
+  const textProjects = useRef(null)
 
   useEffect(() => {
     const el = imgRef.current;
@@ -63,7 +64,19 @@ function App() {
         start: "top 31%",
         end: "bottom 50%",
       },
-      x:"5px"
+      x:"auto"
+    }
+    )
+
+    const elTextprojects = textProjects.current;
+    gsap.fromTo(elTextprojects, {x:-2000, opacity: 1, ease: "slowMo"}, {
+      scrollTrigger: {
+        trigger: elTextprojects,
+        scrub: 0.6,
+        start: "center center",
+        end: "top 50%",
+      },
+      x:"72%"
     }
     )
 
@@ -129,7 +142,8 @@ function App() {
       </div>
       <Skills />
       <SoftSkills />
-
+      <h2 className="text-[9rem] text-white font-extrabold uppercase inline-block" ref={textProjects}>PROJETS</h2>
+      <Projects />
     <Contact />
     </>
   );

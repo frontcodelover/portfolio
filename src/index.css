@@ -4,7 +4,9 @@
 * {
   cursor: none;
   overflow-x: hidden;
-  overflow-y: hiddent;
+}
+.noOverFlowY {
+  overflow-y: hidden;
 }
 body {
   margin: 0;
