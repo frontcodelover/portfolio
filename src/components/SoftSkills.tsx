@@ -28,17 +28,19 @@ function SoftSkills() {
   return (
     <section className="container max-w-screen-xl mx-auto text-center py-20">
     
-      <div className="text-white text-2xl grid grid-cols-2 py-9">
+      <div className="text-white lg:text-2xl grid lg:grid-cols-3 lg:py-9">
         <div className="col-span-1" ref={imgRefLeft}>
-          <span className="bg-red-ndr py-2 px-6 inline-block mb-3 rounded-3xl">Curieux</span> <br />
+          <span className="bg-red-ndr py-2 px-6 inline-block my-3 rounded-3xl">Curieux</span> <br />
           <span className="bg-red-ndr py-2 px-6 inline-block my-3 rounded-3xl">Esprit d'équipe</span> <br />
-          <span className="bg-red-ndr py-2 px-6 inline-block mt-3 rounded-3xl">Passionné</span> <br />
         </div>
 
         <div className="col-span-1" ref={imgRefRight}>
-        <span className="bg-red-ndr py-2 px-6 inline-block mb-3 rounded-3xl">Anticipation</span> <br />
+          <span className="bg-red-ndr py-2 px-6 inline-block my-3 rounded-3xl">Passionné</span> <br />
         <span className="bg-red-ndr py-2 px-6 inline-block my-3 rounded-3xl">Communication</span><br />
-        <span className="bg-red-ndr py-2 px-6 inline-block mt-3 rounded-3xl">Autonomie</span> <br />
+        </div>
+        <div className="col-span-1" ref={imgRefRight}>
+        <span className="bg-red-ndr py-2 px-6 inline-block my-3 rounded-3xl">Anticipation</span> <br />
+        <span className="bg-red-ndr py-2 px-6 inline-block my-3 rounded-3xl">Autonomie</span> <br />
         </div>
 
       </div>
