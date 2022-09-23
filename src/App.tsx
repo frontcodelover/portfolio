@@ -117,16 +117,16 @@ function App() {
     <>
       <DotRing />
 
-      <div className="h-screen grid lg:grid-cols-2 content-center text-white relative z-0 overflow-y-hidden">
+      <div className="h-screen grid lg:grid-cols-2 content-center text-white relative z-1 overflow-y-hidden">
         <div className="lg:col-span-1 col-span-2 mx-auto" ref={imgRef}>
           <p className="lg:text-2xl text-xl tracking-wide">Nicolas de RAEMY</p>
-          <h1 className="font-extrabold lg:text-8xl text-5xl w-auto overflow-y-hidden">
+          <h1 className="font-extrabold lg:text-7xl xl:text-8xl text-5xl w-auto overflow-y-hidden">
             <span className="bg-gradient-to-r from-blue-ndr via-red-ndr to-yellow-ndr bg-clip-text text-transparent overflow-y-hidden">
               Front-End
             </span>{" "}
             <br /> Développeur
           </h1>
-          <h2 className="lg:text-4xl text-2xl lg:my-0 my-3 py-6 tracking-wide">
+          <h2 className="lg:text-3xl text-2xl xl:text-4xl lg:my-0 my-3 py-6 tracking-wide">
             <span className="underline underline-offset-8 decoration-blue-ndr">
               Passionné
             </span>{" "}
@@ -155,7 +155,7 @@ function App() {
             target="_blanck"
             rel="noreferrer"
           >
-            <button className="text-xl bg-white text-black-ndr w-48 h-12 rounded-full hover:bg-red-ndr hover:text-white duration-500">
+            <button className="text-xl bg-white text-black-ndr w-auto px-5 h-12 rounded-full hover:bg-red-ndr hover:text-white duration-500">
               <i className="devicon-twitter-original mr-2"></i>
               Twitter
             </button>
@@ -165,7 +165,7 @@ function App() {
             target="_blanck"
             rel="noreferrer"
           >
-            <button className="text-xl bg-white text-black-ndr w-48 h-12 rounded-full hover:bg-red-ndr hover:text-white duration-500">
+            <button className="text-xl bg-white text-black-ndr w-auto px-5 h-12 rounded-full hover:bg-red-ndr hover:text-white duration-500">
               <i className="devicon-linkedin-plain mr-2"></i>
               Linkedin
             </button>
@@ -175,7 +175,7 @@ function App() {
             target="_blanck"
             rel="noreferrer"
           >
-            <button className=" text-xl bg-white text-black-ndr w-48 h-12 rounded-full hover:bg-red-ndr hover:text-white duration-500">
+            <button className=" text-xl bg-white text-black-ndr w-auto px-5 h-12 rounded-full hover:bg-red-ndr hover:text-white duration-500">
               <i className="devicon-github-original mr-2"></i>
               Github
             </button>
@@ -199,19 +199,22 @@ function App() {
         <h2
           className="lg:text-[9rem] text-5xl text-white w-full font-extrabold uppercase pin text-center overflow-hidden"
           ref={txtTestTwo}
+          id="softskills"
         >
-          SOFT&HARD SKILLS
+          SOFT/HARD SKILLS
         </h2>
       </div>
       <SoftSkills />
       <Skills />
       <h2
-        className="lg:text-[9rem] text-5xl text-white w-full font-extrabold uppercase pin text-center overflow-hidden mt-6"
+        className="lg:text-[9rem] text-5xl text-white w-full font-extrabold uppercase pin text-center overflow-hidden pt-9 my-9"
         ref={textProjects}
+        id="projects"
       >
         PROJETS
       </h2>
       <Projects />
+      <div id="contact"></div>
       <Contact />
     </>
   );

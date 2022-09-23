@@ -36,9 +36,9 @@ const SectionAbout = (props: Props) => {
         Hello ! Je m'appelle Nicolas et je suis développeur web Front-End passionné !
         </span>
       </p>
-      <p className="text-white/50 font-[poppins] dark:text-gray-400 leading-snug pt-6 lg:text-2xl text-lg">
+      <p className="text-white/50 font-[poppins] dark:text-gray-400 leading-snug pt-6 lg:text-2xl text-md">
         Depuis mon plus jeune âge <span className="bg-blue-ndr text-white  px-2">je suis émerveillé par le web</span> et j'ai décidé, à 37 ans, 
-        d'entamer une reconversion professionnelle.<br /> De nature curieuse, mes
+        d'entamer une reconversion professionnelle.<br /><br /> De nature curieuse, mes
         expériences professionnelles m'ont permis de <span className="bg-white text-black-ndr px-2">développer différents
         soft-skills</span> comme l'esprit d'équipe, la communication, la polyvalence ou
         encore la curiosité. <br />

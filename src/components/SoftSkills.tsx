@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger)
 function SoftSkills() {
   const imgRefRight = useRef(null)
   const imgRefLeft = useRef(null)
+  const imgElMiddle = useRef(null)
   
   useEffect(() => {
     const elRight = imgRefRight.current;
@@ -22,6 +23,12 @@ function SoftSkills() {
       trigger: elLeft
       }
     })
+    const elMiddle = imgElMiddle.current;
+    gsap.fromTo(elMiddle, { opacity: 0, translateX: "0" }, {
+      opacity: 1, duration: 5, ease: "power4.inOut", translateX: "0", scrollTrigger: {
+      trigger: elMiddle
+      }
+    })
 
     
   }, [])
@@ -34,7 +41,7 @@ function SoftSkills() {
           <span className="bg-red-ndr py-2 px-6 inline-block my-3 rounded-3xl">Esprit d'équipe</span> <br />
         </div>
 
-        <div className="col-span-1" ref={imgRefRight}>
+        <div className="col-span-1" ref={imgElMiddle}>
           <span className="bg-red-ndr py-2 px-6 inline-block my-3 rounded-3xl">Passionné</span> <br />
         <span className="bg-red-ndr py-2 px-6 inline-block my-3 rounded-3xl">Communication</span><br />
         </div>

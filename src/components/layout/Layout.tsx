@@ -7,7 +7,7 @@ export default function Layout({ children }: any) {
   return (
     <>
     <Nav />
-    <div className="container mx-auto relative h-auto z-0">
+    <div className="container mx-auto relative h-auto">
       <main >{children}</main>
     </div>
       <Footer />
