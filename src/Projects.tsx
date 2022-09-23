@@ -117,7 +117,7 @@ const Projects = (props: Props) => {
           </div>
           <div className="absolute bottom-5 text-white">
             <a
-              href="https://github.com/frontcodelover/spotphoto"
+              href="https://github.com/frontcodelover/portfolio"
               target="_blank"
               className="cursor-pointer font-semibold hover:text-white"
               rel="noreferrer"
