@@ -31,13 +31,13 @@ const SectionAbout = (props: Props) => {
         <img src={NdrNew} alt="ndr" className="w-full object-scale-down h-96 lg:h-3/4 object-top rounded-xl" />
       </div>
         <div className="lg:col-span-2 lg:content-center pt-7">
-      <p className="font-[poppins] dark:text-gray-400 leading-snug lg:text-4xl text-2xl overflow-y-hidden">
+      <p className="font-[poppins] dark:text-gray-400 leading-snug lg:text-4xl text-2xl overflow-hidden">
         <span role="img" aria-label="vulcan" >👋 </span>
           <span className="bg-gradient-to-r from-yellow-ndr to-white bg-clip-text text-transparent" >
         Hello ! Je m'appelle Nicolas et je suis développeur web Front-End passionné !
         </span>
       </p>
-      <p className="text-white/70 font-[poppins] dark:text-gray-400 leading-snug pt-6 lg:text-2xl text-md">
+      <p className="text-white/70 font-[poppins] dark:text-gray-400 leading-snug pt-6 lg:text-2xl text-md overflow-hidden">
         Depuis mon plus jeune âge <span className="text-white">je suis émerveillé par le web</span> et j'ai décidé, à 37 ans, 
         d'entamer une reconversion professionnelle.<br /><br /> De nature curieuse, mes
         expériences professionnelles m'ont permis de <span className="text-white">développer différents
