@@ -15,6 +15,9 @@ module.exports = {
       "bubble-gum": "#ff77e9",
       bermuda: "#78dcca",
     },
+    fontFamily: {
+      'poppins': ['poppins'],
   },
   plugins: [],
-};
+  }
+}

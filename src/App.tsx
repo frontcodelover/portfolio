@@ -8,7 +8,7 @@ import SoftSkills from "./components/SoftSkills";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import DotRing from "./components/DotRing/DotRing";
-import Projects from "./Projects";
+import Projects from "./components/Projects";
 
 gsap.registerPlugin(ScrollTrigger);
 
