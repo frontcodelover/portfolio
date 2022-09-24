@@ -162,7 +162,7 @@ function App() {
             </button>
           </a>
           <a
-            href="https://www.linkedin.com/in/nicolas-de-raemy-957b62231/"
+            href="https://www.linkedin.com/in/nicolas-de-raemy/"
             target="_blanck"
             rel="noreferrer"
           >
