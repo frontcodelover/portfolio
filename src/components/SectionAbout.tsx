@@ -1,5 +1,4 @@
-import React, { useRef, useEffect } from "react";
-import Ndr from "../ndr-nb.jpg";
+import { useRef, useEffect } from "react";
 import NdrNew from "../ndr-2.jpg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

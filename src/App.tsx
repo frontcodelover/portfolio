@@ -1,14 +1,11 @@
-import React, { useRef, useEffect } from "react";
-import codeur from "./codeur.png";
+import { useRef, useEffect } from "react";
 import codeurOpti from "./codeur.webp";
-import "./App.css";
 import SectionAbout from "./components/SectionAbout";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import SoftSkills from "./components/SoftSkills";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import DotRing from "./components/DotRing/DotRing";
 import Projects from "./components/Projects";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -117,7 +114,6 @@ function App() {
 
   return (
     <>
-      {/* <DotRing /> */}
         <div className="fixed bottom-10 right-10 z-50">
           <ScrollToTop />
         </div>

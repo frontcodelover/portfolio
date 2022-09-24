@@ -1,17 +1,15 @@
-import React from 'react'
-import ContactForm from './ContactForm'
+import ContactForm from "./ContactForm";
 
 // eslint-disable-next-line no-empty-pattern
 function Contact() {
   return (
     <div className="relative flex flex-col justify-center overflow-hidden p-5 sm:py-12">
-  <div className="mx-auto rounded-3xl bg-[#081d31] py-9 text-center w-full">
-    <h2 className="lg:text-5xl text-2xl font-bold leading-tight text-white overflow-hidden py-4 mb-4">Et si on se rencontrait ?</h2>
-    <ContactForm />
-    <div
-          className=" flex container align-middle justify-center mx-auto text-center"
-        
-        >
+      <div className="mx-auto rounded-3xl bg-[#081d31] py-9 text-center w-full">
+        <h2 className="lg:text-5xl text-2xl font-bold leading-tight text-white overflow-hidden py-4 mb-4">
+          Et si on se rencontrait ?
+        </h2>
+        <ContactForm />
+        <div className=" flex container align-middle justify-center mx-auto text-center">
           <a
             href="https://twitter.com/frontcodelover"
             target="_blanck"
@@ -40,9 +38,9 @@ function Contact() {
             </button>
           </a>
         </div>
-  </div>
-</div>
-  )
+      </div>
+    </div>
+  );
 }
 
-export default Contact
+export default Contact;

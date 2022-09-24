@@ -59,7 +59,9 @@ export default function Nav() {
                 <a href="/#about">A propos</a>
               </li>
               <li className="text-white/50 hover:text-white scroll-smooth">
-                <a href="/#softskills" className="scroll-smooth">Soft Skills</a>
+                <a href="/#softskills" className="scroll-smooth">
+                  Soft Skills
+                </a>
               </li>
               <li className="text-white/50 hover:text-white">
                 <a href="/#skills">Skills</a>

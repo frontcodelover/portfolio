@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -56,7 +56,8 @@ function SoftSkills() {
     <section className="container max-w-screen-xl mx-auto text-center py-20">
       <p className="lg:text-2xl text-center text-white/70 py-9 mb-9 text-xl p-5">
         Mes différentes expériences professionnelles m'ont permis d'acquérir
-        plusieurs soft-skills que je mets en pratique au quotidien dans les tâches qui me sont confiées.
+        plusieurs soft-skills que je mets en pratique au quotidien dans les
+        tâches qui me sont confiées.
       </p>
       <div className="text-white lg:text-2xl grid lg:grid-cols-3 lg:py-9">
         <div className="col-span-1" ref={imgRefLeft}>

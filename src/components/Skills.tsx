@@ -2,10 +2,13 @@ type Props = {};
 
 const Skills = (props: Props) => {
   return (
-    <section className="container max-w-screen-xl mx-auto text-center" id="skills">
-    
+    <section
+      className="container max-w-screen-xl mx-auto text-center"
+      id="skills"
+    >
       <p className="lg:text-2xl text-center text-white/70 py-9 mb-9 text-xl p-5">
-        Parce que le développement est aussi une histoire d'outils et de technologies, voici ceux que j'utilise.
+        Parce que le développement est aussi une histoire d'outils et de
+        technologies, voici ceux que j'utilise.
       </p>
       <div className="grid grid-cols-2 lg:grid-cols-6 lg:gap-10 gap-6 py-9 text-center lg:p-0 p-7">
         <div className="col-span-1 flex flex-col">
