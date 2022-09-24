@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import codeur from "./codeur.png";
+import codeurOpti from "./codeur.webp";
 import "./App.css";
 import SectionAbout from "./components/SectionAbout";
 import Skills from "./components/Skills";
@@ -142,7 +143,7 @@ function App() {
         </div>
         <div className="lg:col-span-1 col-span-2 lg:pb-12 min-h-full mb-6">
           <img
-            src={codeur}
+            src={codeurOpti}
             alt="codeur"
             className="object-cover min-h-full"
             id="computer"
