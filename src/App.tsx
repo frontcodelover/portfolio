@@ -9,6 +9,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import DotRing from "./components/DotRing/DotRing";
 import Projects from "./components/Projects";
+import ScrollToTop from "./components/ScrollToTop";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -115,9 +116,12 @@ function App() {
 
   return (
     <>
-      <DotRing />
+      {/* <DotRing /> */}
+        <div className="fixed bottom-10 right-10 z-50">
+          <ScrollToTop />
+        </div>
 
-      <div className="h-screen grid lg:grid-cols-2 content-center text-white relative z-1 overflow-y-hidden">
+      <div className="min-h-screen grid lg:grid-cols-2 content-center text-white relative z-1 overflow-y-hidden">
         <div className="lg:col-span-1 col-span-2 mx-auto" ref={imgRef}>
           <p className="lg:text-2xl text-xl tracking-wide">Nicolas de RAEMY</p>
           <h1 className="font-extrabold lg:text-7xl xl:text-8xl text-5xl w-auto overflow-y-hidden">
@@ -136,11 +140,11 @@ function App() {
             </span>
           </h2>
         </div>
-        <div className="lg:col-span-1 pb-12">
+        <div className="lg:col-span-1 col-span-2 lg:pb-12 min-h-full mb-6">
           <img
             src={codeur}
             alt="codeur"
-            className="w-full object-cover"
+            className="object-cover min-h-full"
             id="computer"
             ref={imgComputRef}
           />

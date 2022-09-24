@@ -1,5 +1,6 @@
 import React, {useRef, useEffect} from "react";
 import Ndr from "../ndr-nb.jpg"
+import NdrNew from "../ndr-2.jpg"
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
@@ -15,8 +16,8 @@ const SectionAbout = (props: Props) => {
     gsap.fromTo(el, { opacity: 0, translateX: "50px" }, {
       opacity: 1, duration: 4, ease: "power4.inOut",  translateX: "0", scrollTrigger: {
         trigger: el,
-        start: 'top 5%',
-  end: 'bottom 40%',
+        start: 'top 10%',
+  end: 'bottom 60%',
   scrub: 1,
         pin:true,
       }
@@ -27,7 +28,7 @@ const SectionAbout = (props: Props) => {
   return (
     <section className="grid lg:grid-cols-3 grid-col-2 pb-9 lg:gap-10 p-5 h-auto" ref={imgRef} id="about">
       <div className="lg:col-span-1 h-auto mx-auto col-span-2" >
-        <img src={Ndr} alt="ndr" className="w-full object-scale-down h-96 lg:h-3/4 object-top rounded-xl" />
+        <img src={NdrNew} alt="ndr" className="w-full object-scale-down h-96 lg:h-3/4 object-top rounded-xl" />
       </div>
         <div className="lg:col-span-2 lg:content-center pt-7">
       <p className="font-[poppins] dark:text-gray-400 leading-snug lg:text-4xl text-2xl overflow-y-hidden">
