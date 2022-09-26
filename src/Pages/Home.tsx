@@ -187,7 +187,7 @@ export default function Home() {
         <section id="heros">
           <h2
             id="textWrap"
-            className="lg:text-[9rem] text-5xl text-white w-full font-extrabold uppercase pin text-center overflow-hidden"
+            className="lg:text-[6rem] text-5xl text-white w-full font-extrabold uppercase pin text-center overflow-hidden"
             ref={txtTest}
           >
             Qui suis-je ?
@@ -198,7 +198,7 @@ export default function Home() {
 
       <div className="w-auto relative text-center">
         <h2
-          className="lg:text-[9rem] text-5xl text-white w-full font-extrabold uppercase pin text-center overflow-hidden"
+          className="lg:text-[6rem] text-5xl text-white w-full font-extrabold uppercase pin text-center overflow-hidden"
           ref={txtTestTwo}
           id="softskills"
         >
@@ -208,7 +208,7 @@ export default function Home() {
       <SoftSkills />
       <Skills />
       <h2
-        className="lg:text-[9rem] text-5xl text-white w-full font-extrabold uppercase pin text-center overflow-hidden pt-9 my-9"
+        className="lg:text-[6rem] text-5xl text-white w-full font-extrabold uppercase pin text-center overflow-hidden pt-9 my-9"
         ref={textProjects}
         id="projects"
       >
