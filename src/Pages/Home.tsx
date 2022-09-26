@@ -23,9 +23,9 @@ export default function Home() {
     const el = imgRef.current;
     gsap.fromTo(
       el,
-      { opacity: 0, yPercent: -25, stagger: 0.1 },
+      { autoAlpha: 0, yPercent: -25, stagger: 0.1 },
       {
-        opacity: 1,
+        autoAlpha: 1,
         duration: 2,
         ease: "power4.inOut",
         translateY: "0",
@@ -39,11 +39,11 @@ export default function Home() {
     const elComputer = imgComputRef.current;
     gsap.fromTo(
       elComputer,
-      { scale: 0.8, opacity: 0 },
+      { scale: 0.8, autoAlpha: 0 },
       {
         scale: 1,
         ease: "power4.inOut",
-        opacity: 1,
+        autoAlpha: 1,
         duration: 2,
         scrollTrigger: {
           trigger: elComputer,
@@ -54,10 +54,10 @@ export default function Home() {
     const elButton = imgButtonRef.current;
     gsap.fromTo(
       elButton,
-      { opacity: 0, translateY: "10px" },
+      { autoAlpha: 0, translateY: "10px" },
       {
         ease: "power4.inOut",
-        opacity: 1,
+        autoAlpha: 1,
         duration: 2,
         translateY: "0",
         scrollTrigger: {
@@ -69,7 +69,7 @@ export default function Home() {
     const elText = txtTest.current;
     gsap.fromTo(
       elText,
-      { x: -2000, opacity: 1, ease: "slowMo" },
+      { x: -2000, autoAlpha: 1, ease: "slowMo" },
       {
         scrollTrigger: {
           trigger: elText,
@@ -84,7 +84,7 @@ export default function Home() {
     const elText2 = txtTestTwo.current;
     gsap.fromTo(
       elText2,
-      { x: -2000, opacity: 1, ease: "slowMo" },
+      { x: -2000, autoAlpha: 1, ease: "slowMo" },
       {
         scrollTrigger: {
           trigger: elText2,
