@@ -49,7 +49,7 @@ const SectionAbout = (props: Props) => {
             👋{" "}
           </span>
           <span className="bg-gradient-to-r from-yellow-ndr to-white bg-clip-text text-transparent">
-            Hello ! Je m'appelle Nicolas et je suis développeur web Front-End
+            Hello ! Je m'appelle Nicolas et je suis développeur web Front-End React
             passionné !
           </span>
         </p>
