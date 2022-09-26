@@ -19,7 +19,15 @@ class Footer extends Component<Props, State> {
             Nicolas de RAEMY
           </a>
           .
+
         </span>
+        <div className="mt-4 md:mt-0 md:order-1 text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <a
+            href="/mentions-legales"
+          >
+            Mentions légales
+          </a>
+          </div>
       </footer>
     );
   }
