@@ -99,7 +99,7 @@ export default function Home() {
     const elTextprojects = textProjects.current;
     gsap.fromTo(
       elTextprojects,
-      { x: -2000, opacity: 1, ease: "slowMo" },
+      { x: -2000, autoAlpha: 1, ease: "slowMo" },
       {
         scrollTrigger: {
           trigger: elTextprojects,
