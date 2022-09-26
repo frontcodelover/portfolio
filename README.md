@@ -4,9 +4,10 @@ Ce projet est mon portfolio. Il regroupe mon histoire (une brève partie), les t
 
 ## STACK
 
-- React
+- REACT
 - GSAP
 - TAILWIND CSS
+- REACT ROUTER
 
 ## URL
 
