@@ -16,7 +16,7 @@ const SectionAbout = (props: Props) => {
       { opacity: 0, translateX: "50px" },
       {
         opacity: 1,
-        duration: 4,
+        duration: 3,
         ease: "power4.inOut",
         translateX: "0",
         scrollTrigger: {
