@@ -128,7 +128,7 @@ export default function Home() {
         <ScrollToTop />
       </div>
 
-      <div className="min-h-screen grid lg:grid-cols-2 content-center text-white relative z-1 overflow-y-hidden">
+      <div className="min-h-screen grid lg:grid-cols-2 content-center text-white relative z-1">
         <div className="lg:col-span-1 col-span-2 mx-auto" ref={imgRef}>
           <p className="lg:text-2xl text-xl tracking-wide">Nicolas de RAEMY</p>
           <h1 className="font-extrabold lg:text-7xl xl:text-8xl text-5xl w-auto overflow-y-hidden">
