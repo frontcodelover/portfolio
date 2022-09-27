@@ -11,6 +11,8 @@ import ScrollToTop from "../components/ScrollToTop";
 
 gsap.registerPlugin(ScrollTrigger);
 
+ScrollTrigger.normalizeScroll(true);
+
 export default function Home() {
   const imgRef = useRef(null);
   const imgComputRef = useRef(null);
