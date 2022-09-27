@@ -49,9 +49,6 @@ export default function Home() {
         ease: "power4.inOut",
         autoAlpha: 1,
         duration: 2,
-        onComplete() {
-          console.log(gsap.getProperty(elComputer, "scale"));
-        },
         scrollTrigger: {
           trigger: elComputer,
           once: true,
@@ -147,11 +144,11 @@ export default function Home() {
             </span>
           </h2>
         </div>
-        <div className="lg:col-span-1 col-span-2 lg:pb-12 min-h-full mb-6">
+        <div className="lg:col-span-1 col-span-2 lg:pb-12 h-full mb-6">
           <img
             src={codeurOpti}
             alt="codeur"
-            className="object-cover min-h-full"
+            className="object-cover h-full"
             id="computer"
             // ref={imgComputRef}
           />
