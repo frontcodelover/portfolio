@@ -32,6 +32,7 @@ export default function Home() {
         yPercent: 0,
         scrollTrigger: {
           trigger: el,
+          once: true,
         },
       }
     );
@@ -47,6 +48,7 @@ export default function Home() {
         duration: 2,
         scrollTrigger: {
           trigger: elComputer,
+          once: true,
         },
       }
     );
@@ -62,6 +64,7 @@ export default function Home() {
         translateY: "0",
         scrollTrigger: {
           trigger: elButton,
+          once: true,
         },
       }
     );
@@ -217,7 +220,6 @@ export default function Home() {
       <Projects />
       <div id="contact"></div>
       <Contact />
-
     </>
   );
 }
