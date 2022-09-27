@@ -19,6 +19,7 @@ export default function Home() {
   const txtTestTwo = useRef(null);
   const textProjects = useRef(null);
 
+
   useEffect(() => {
     const el = imgRef.current;
     gsap.fromTo(
@@ -46,6 +47,9 @@ export default function Home() {
         ease: "power4.inOut",
         autoAlpha: 1,
         duration: 2,
+        onComplete() {
+          console.log(gsap.getProperty(elComputer, "scale"));
+        },
         scrollTrigger: {
           trigger: elComputer,
           once: true,
@@ -117,6 +121,7 @@ export default function Home() {
 
   return (
     <>
+
       <div className="fixed bottom-10 right-10 z-50">
         <ScrollToTop />
       </div>
