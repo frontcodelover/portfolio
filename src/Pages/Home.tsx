@@ -153,7 +153,7 @@ export default function Home() {
             alt="codeur"
             className="object-cover min-h-full"
             id="computer"
-            ref={imgComputRef}
+            // ref={imgComputRef}
           />
         </div>
 
