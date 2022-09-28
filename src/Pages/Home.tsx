@@ -80,7 +80,7 @@ export default function Home() {
         scrollTrigger: {
           trigger: elText,
           scrub: 0.6,
-          start: "center center",
+          start: "top 30%",
           end: "top 50%",
         },
         x: "0",
@@ -90,13 +90,13 @@ export default function Home() {
     const elText2 = txtTestTwo.current;
     gsap.fromTo(
       elText2,
-      { x: -2000, autoAlpha: 1, ease: "slowMo" },
+      { x: -2000, autoAlpha: 1, ease: "slowMo", duration: 1, },
       {
         scrollTrigger: {
           trigger: elText2,
           scrub: 0.6,
-          start: "top 31%",
-          end: "bottom 50%",
+          start: "top 90%",
+          end: "bottom 40%",
         },
         x: "0",
       }
@@ -197,7 +197,7 @@ export default function Home() {
         <section id="heros">
           <h2
             id="textWrap"
-            className="lg:text-[6rem] text-5xl text-white w-full font-extrabold uppercase pin text-center overflow-hidden"
+            className="lg:text-[6rem] text-5xl text-white w-full font-extrabold uppercase pin text-center overflow-hidden pt-9"
             ref={txtTest}
           >
             Qui suis-je ?
@@ -208,7 +208,7 @@ export default function Home() {
 
       <div className="w-auto relative text-center">
         <h2
-          className="lg:text-[6rem] text-5xl text-white w-full font-extrabold uppercase pin text-center overflow-hidden"
+          className="lg:text-[6rem] text-5xl text-white w-full font-extrabold uppercase pin text-center overflow-hidden pt-20"
           ref={txtTestTwo}
           id="softskills"
         >

@@ -22,7 +22,7 @@ const SectionAbout = (props: Props) => {
         scrollTrigger: {
           trigger: el,
           start: "top 10%",
-          end: "bottom 60%",
+          end: "bottom 10%",
           scrub: 1,
           pin: true,
         },
@@ -43,7 +43,7 @@ const SectionAbout = (props: Props) => {
           className="w-full object-scale-down h-96 lg:h-3/4 object-top rounded-xl"
         />
       </div>
-      <div className="lg:col-span-2 lg:content-center pt-7">
+      <div className="lg:col-span-2 lg:content-center">
         <p className="font-[poppins] dark:text-gray-400 leading-snug lg:text-4xl text-2xl overflow-hidden">
           <span role="img" aria-label="vulcan">
             👋{" "}
@@ -53,7 +53,7 @@ const SectionAbout = (props: Props) => {
             passionné !
           </span>
         </p>
-        <p className="text-white/70 font-[poppins] dark:text-gray-400 leading-snug pt-6 lg:text-2xl text-md overflow-hidden">
+        <p className="text-white/70 font-[poppins] dark:text-gray-400 leading-snug pt-6 lg:text-xl text-md overflow-hidden">
           Depuis mon plus jeune âge{" "}
           <span className="text-white">je suis émerveillé par le web</span> et
           j'ai décidé, à 37 ans, d'entamer une reconversion professionnelle.
