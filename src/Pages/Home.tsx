@@ -120,6 +120,9 @@ export default function Home() {
 
   return (
     <>
+    <head>
+    <meta property="og:image" content="%PUBLIC_URL%/sreen.jpg" />
+    </head>
 
       <div className="fixed bottom-10 right-10 z-50">
         <ScrollToTop />
