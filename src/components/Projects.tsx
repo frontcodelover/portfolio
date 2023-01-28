@@ -29,7 +29,7 @@ const Projects = (props: Props) => {
   return (
     <section>
       <div className="grid lg:grid-cols-4 gap-6  overflow-hidden mt-14 p-5">
-        <div className="card bg-[#01111e] p-6 rounded-xl text-white/50 relative">
+        <div className="card bg-[#01111e] p-9 rounded-xl text-white/50 relative">
           <h3 className="text-white text-2xl font-semibold mb-4">
             Livres préférés
           </h3>
@@ -50,19 +50,30 @@ const Projects = (props: Props) => {
           </div>
           <div className="absolute bottom-5 text-white">
             <a
-              href="https://github.com/frontcodelover/mybooklist"
+              href="https://mybooklist-blush.vercel.app/"
               target="_blank"
               className="cursor-pointer font-semibold hover:text-white"
               rel="noreferrer"
             >
               <p className="flex mr-2">
                 <FiLink className="mr-2 mt-1" />
-                Github
+                MyBookList-blush.vercel.app
+							</p>
+						</a>
+						<a
+              href="https://github.com/frontcodelover/mybooklist"
+              target="_blank"
+              className="cursor-pointer font-semibold hover:text-white"
+              rel="noreferrer"
+            >
+							<p className="flex mr-2">
+                <FiLink className="mr-2 mt-1" />
+                Github repo
               </p>
             </a>
           </div>
         </div>
-        <div className="card bg-[#01111e] p-6 rounded-xl text-white/50 relative">
+        <div className="card bg-[#01111e] p-9 rounded-xl text-white/50 relative">
           <h3 className="text-white text-2xl font-semibold mb-4">
             CodeTracker
           </h3>
@@ -93,12 +104,12 @@ const Projects = (props: Props) => {
             >
               <p className="flex mr-2">
                 <FiLink className="mr-2 mt-1" />
-                Github
+                Github repo
               </p>
             </a>
           </div>
         </div>
-        <div className="card bg-[#01111e] p-6 rounded-xl text-white/50 relative">
+        <div className="card bg-[#01111e] p-9 rounded-xl text-white/50 relative">
           <h3 className="text-white text-2xl font-semibold mb-4">Portfolio</h3>
           <p>Portfolio (celui que vous visitez actuellement)</p>
           <div className="flex justify-start flex-wrap my-9 font-semibold">
@@ -124,12 +135,12 @@ const Projects = (props: Props) => {
             >
               <p className="flex mr-2">
                 <FiLink className="mr-2 mt-1" />
-                Github
+                Github repo
               </p>
             </a>
           </div>
         </div>
-        <div className="card bg-[#01111e] p-6 rounded-xl text-white/50 relative">
+        <div className="card bg-[#01111e] p-9 rounded-xl text-white/50 relative">
           <h3 className="text-white text-2xl font-semibold mb-4">
             Avant j'étais riche
           </h3>

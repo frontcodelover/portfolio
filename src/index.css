@@ -25,3 +25,12 @@ code {
     monospace;
 }
 
+.alignText {
+	text-align: left!important;
+	display: inherit;
+	padding: 20px 0;
+}
+
+.areaSize {
+	min-height: 200px;
+}
